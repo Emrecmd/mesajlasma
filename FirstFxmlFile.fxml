@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <panes>
+    <TitledPane animated="false" text="untitled 2">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <HBox layoutX="14.0" layoutY="14.0" prefHeight="315.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="Metin Yazılabilir" />
+                              <TextField prefHeight="26.0" prefWidth="297.0" />
+                              <DatePicker />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <BottomNavigationButton>
+                                 <padding>
+                                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                 </VBox.margin>
+                              </BottomNavigationButton>
+                              <Button mnemonicParsing="false" text="Button">
+                                 <padding>
+                                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </padding>
+                  </HBox>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" text="untitled 3">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <GridPane layoutX="32.7" layoutY="32.7" prefHeight="315.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <StackPane prefHeight="39.0" prefWidth="221.0">
+                           <children>
+                              <Button mnemonicParsing="false" text="Button" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="201.0" prefWidth="349.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <ColorPicker />
+                           </children>
+                        </StackPane>
+                        <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" text="untitled 1">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ColorPicker layoutX="394.0" layoutY="57.0" />
+                  <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="108.0" text="Satın al" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+  </panes>
+</Accordion>
